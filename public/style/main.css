@@ -248,7 +248,7 @@ nav {
   width: 31%; }
   .news-card-date {
     display: inline;
-    background: #dc3908bb;
+    background: #fab904;
     color: white;
     font-size: 0.5rem;
     padding: 0.3rem 0.5rem;
@@ -297,15 +297,15 @@ nav {
 
 .mulaqaat {
   margin-bottom: 1.5rem;
-  width: 100%;
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .mulaqaat-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: wrap; }
   .mulaqaat-card {
     margin-bottom: 1rem;
@@ -314,7 +314,7 @@ nav {
     .mulaqaat-card-date {
       display: inline;
       padding: 0.2rem 0.3rem;
-      background-color: #dc3b08;
+      background-color: #fab904;
       color: white; }
     .mulaqaat-card-img {
       margin-bottom: 1rem; }
@@ -326,4 +326,30 @@ nav {
     .mulaqaat-card-text {
       letter-spacing: 1px;
       margin-bottom: 1rem;
+      font-weight: 700; }
+
+.gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem; }
+  .gallery-img-container {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; }
+  .gallery-text {
+    position: relative;
+    padding: 1rem 1.2rem;
+    width: 90%;
+    box-shadow: 5px 8px 17px rgba(0, 0, 0, 0.51); }
+    .gallery-text-date {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .gallery-text-para {
+      margin: 1rem;
+      font-size: 0.8rem;
       font-weight: 700; }
