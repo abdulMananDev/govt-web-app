@@ -13,8 +13,10 @@ $read-load: #fab904;
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  font-size: 62.5%;
   line-height: 1.7;
+}
+html {
+  font-size: 62.5%;
 }
 .container {
   position: absolute;
@@ -276,6 +278,7 @@ nav {
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2px;
+    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21);
   }
 }
 .news-cards {
@@ -421,5 +424,61 @@ nav {
       font-size: 0.8rem;
       font-weight: 700;
     }
+  }
+}
+// speeches
+.speeches-container {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.speeches-video-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 100%;
+}
+.speeches-video-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 5px 4px 24px 13px rgba(0, 0, 0, 0.3);
+  &-date {
+    padding: 1rem 1rem;
+    position: absolute;
+    top: 0;
+    left: -1;
+    background-color: $read-load;
+  }
+  &-heading {
+    display: inline-block;
+    margin: 5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  &-icons {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+  &-icon {
+    position: absolute;
+  }
+  &-para {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 192.4%;
+    margin: 2rem 0;
   }
 }
