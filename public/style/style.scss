@@ -263,11 +263,10 @@ nav {
 }
 
 .heading-primary {
-  width: auto;
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 1.2rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   padding: 0.8rem 1rem;
   margin-bottom: 2rem;
@@ -506,4 +505,29 @@ nav {
 }
 .news-card-img-1 {
   width: 80%;
+}
+// gallery
+.gallery {
+  position: absolute;
+  text-align: center;
+  box-sizing: border-box;
+  width: 98vw;
+  height: 96vh;
+  padding: 1rem 1.2rem;
+  &-img-top-container {
+    width: 100%;
+    text-align: center;
+  }
+  &-img-bottom-container {
+    width: 100%;
+    text-align: center;
+  }
+  &-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0 auto;
+  }
 }
