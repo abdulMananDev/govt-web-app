@@ -1,0 +1,381 @@
+body {
+  position: relative;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.top_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cc3201;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  padding: 0 15px;
+}
+
+.top_actions > div > ul {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+  margin: 0;
+}
+
+.top_actions > div > ul > li {
+  list-style: none;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 6px solid white;
+}
+.top_actions_items {
+  position: relative;
+}
+
+.page_header {
+  background-color: #dc3b08;
+  padding: 5px 0;
+}
+
+.page_header > div {
+  padding-left: 30px;
+}
+
+.page_header > div > h1 {
+  padding-left: 20px;
+  color: white;
+  text-decoration: underline;
+}
+.main_name {
+  display: inline;
+}
+
+.font_size_action {
+  border: 2px solid white;
+  padding: 5px;
+  margin-left: 6px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hero Banner */
+.hero_banner {
+  background-image: url("/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  height: 500px;
+  background-position: bottom;
+  width: 100%;
+}
+
+.hero_banner_overlay {
+  background-color: rgba(0, 0, 0, 0.272);
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.lg_image {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* IN BRIEF */
+
+.in_brief {
+  background-color: #dc3b08;
+  display: flex;
+  align-items: center;
+  padding: 06px 0px;
+  padding-left: 25px;
+  color: white;
+}
+
+.in_brief_text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 120px;
+}
+
+.in_brief_marquee,
+.in_brief_marquee > div {
+  display: inline;
+}
+
+.in_brief_marquee > div {
+  margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.marquee_emblem {
+  height: 32px;
+  margin-right: 15px;
+}
+
+/* NAVIGATION */
+
+.main_navigation {
+  background-color: #31bad8;
+  height: 170px;
+  box-shadow: inset 0px -5px 7px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.main_navigation_wrapper {
+  width: 60%;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+/* ICONS */
+
+.icon_wrapper {
+  background-color: #38c9e9;
+  box-shadow: 4px 7px 18px rgba(0, 0, 0, 0.48);
+  border-radius: 13px;
+  width: 108px;
+  height: 107px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.icon_img {
+  height: 65px;
+  width: 65px;
+  margin-top: 15px;
+}
+
+.icon_placeholder {
+  text-align: center;
+  height: 80%;
+}
+
+/* TWEETS AND ABOUT */
+
+.tweets_about {
+  position: relative;
+}
+.tweets {
+  background: pink;
+  width: 50%;
+  height: 100%;
+}
+
+.tweets_about_wrapper {
+  width: 95%;
+  height: 100%;
+  position: relative;
+  margin: auto auto;
+  display: flex;
+}
+.tweets_about_wrapper > section {
+  display: inline-block;
+  width: 50%;
+}
+
+.tweets_header {
+  background-color: #186a20;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweets_header_text {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* ABOUT LG SECTION */
+
+.about_lg {
+  background-color: #f3eaea;
+  position: relative;
+  padding: 0px 0px;
+  padding-bottom: 100px;
+}
+
+.about_lg_img_wrapper {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/Landing_Page_Images/about_HLG.png");
+  height: 450px;
+  width: 90%;
+  margin: auto auto;
+  margin-top: 30px;
+}
+
+.about_lg_text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+
+  color: #070707;
+  margin-top: 30px;
+}
+
+.about_lg_info {
+  margin-top: 30px;
+}
+.about_lg_info > p {
+  font-size: 18px;
+  line-height: 151.6%;
+  /* or 27px */
+
+  text-align: justify;
+  width: 80%;
+  color: #3f3838;
+  margin: auto auto;
+}
+
+.about_section_read_more {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fab904;
+  color: #000000;
+  width: 100px;
+  padding: 20px 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* LGS MULAQAAT */
+
+.lg_mulaqaat_text {
+  width: fit-content;
+  padding: 10px 25px;
+  box-shadow: 0px 4px 26px 9px rgba(0, 0, 0, 0.25);
+  display: flex;
+  margin: auto auto;
+}
+
+.lg_mulaqaat_text > img {
+  width: 62px;
+  height: 62px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.lg_mulaqaat_text > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lg_mulaqaat_section {
+  margin-top: 100px;
+}
+
+.lg_chinar {
+  position: relative;
+  top: 100px;
+  left: 150px;
+  width: fit-content;
+}
+
+.lg_chinar > img {
+  width: 150px;
+  height: 150px;
+}
+
+.lg_mulaqaat_main {
+  display: flex;
+  width: 90%;
+  margin: auto auto;
+}
+
+.lg_mulaqaat_main > section {
+  margin-top: 40px;
+  width: 50%;
+  position: relative;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lg_mulaqaat_date {
+  background-color: #ffbc00;
+  padding: 7px 20px;
+  max-width: fit-content;
+}
+
+.lg_mulaqaat_image {
+  width: 100%;
+  background-image: url("/assets/images/Landing_Page_Images/LGs_Mulaqaat/Rectangle\ 116.svg");
+  height: 423px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lg_mulaqaat_heading {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 182%;
+  /* or 56px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  color: #e43e09;
+}
+
+.lg_mulaqaat_information {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 166%;
+  /* or 33px */
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+  width: 80%;
+  margin: auto auto;
+}
