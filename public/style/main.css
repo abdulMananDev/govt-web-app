@@ -238,6 +238,12 @@ nav {
     letter-spacing: 2px;
     text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21); }
 
+.heading-secondary-text {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21); }
+
 .news-cards {
   display: flex;
   flex-direction: row;
@@ -358,6 +364,7 @@ nav {
       font-weight: 700; }
 
 .speeches-container {
+  position: relative;
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -369,7 +376,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   flex-flow: wrap;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1.5rem; }
 
 .speeches-video-card {
   position: relative;
@@ -405,3 +413,19 @@ nav {
     font-size: 1.5rem;
     line-height: 192.4%;
     margin: 2rem 0; }
+
+.top-speeches {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 25rem; }
+
+.deer-img {
+  position: absolute;
+  right: 0%;
+  top: 0;
+  display: flex;
+  flex-direction: column; }
+
+.news-card-img-1 {
+  width: 80%; }
