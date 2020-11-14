@@ -140,7 +140,7 @@ footer li {
 nav {
   position: relative;
   width: 100%;
-  background-color: #31bad8;
+  background-color: #cd4317;
   padding: 1.8rem 0; }
 
 .cards {
@@ -152,7 +152,7 @@ nav {
   margin: 0 auto; }
 
 .card {
-  background-color: #38c9e9;
+  background-color: #cd4317;
   position: relative;
   padding: 1.5rem 2.5rem;
   border-radius: 0.5rem;
@@ -710,6 +710,10 @@ body {
       text-align: center;
       background: rgba(255, 255, 255, 0.65);
       padding: 1.5rem 0; }
+    .banner .banner-text:after {
+      content: "know more";
+      background-color: #cd4317;
+      text-transform: uppercase; }
 
 .main-heading {
   font-size: 2.2rem;
