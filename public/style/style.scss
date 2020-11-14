@@ -17,14 +17,14 @@ body {
   line-height: 1.7;
 }
 html {
-  @include media(">=desktop", "<LGdesktop") {
-    font-size: 80.5%;
+  @include media(">=desktop", "<=LGdesktop") {
+    font-size: 88.5%;
   }
   @include media(">tablet", "<=desktop") {
     font-size: 55%;
   }
   @include media(">LGdesktop") {
-    font-size: 80.5%;
+    font-size: 156.5%;
   }
 }
 .container {
@@ -293,20 +293,25 @@ nav {
 .heading-primary {
   display: flex;
   box-shadow: 4px 4px 16px rgba($color: #000000, $alpha: 0.33);
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.8rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
   &-icon {
+    display: inline-block;
     margin: auto;
-    width: 25%;
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
   }
   &-text {
+    // margin: auto;
     white-space: nowrap;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21);
-    padding: 0 0.2rem;
+    padding: 0 1.2rem;
   }
 }
 .heading-secondary-text {
@@ -335,7 +340,7 @@ nav {
     display: inline;
     background: $read-load;
     color: white;
-    font-size: 0.5rem;
+    font-size: 1.2rem;
     padding: 0.3rem 0.5rem;
     margin-bottom: 1rem;
   }
