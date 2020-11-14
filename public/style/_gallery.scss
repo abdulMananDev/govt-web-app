@@ -1,0 +1,31 @@
+.gallery {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  &-img-container {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  &-text {
+    position: relative;
+    padding: 1rem 1.2rem;
+    width: 90%;
+    box-shadow: 5px 8px 17px rgba($color: #000000, $alpha: 0.51);
+    &-date {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &-para {
+      margin: 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+  }
+}

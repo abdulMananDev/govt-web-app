@@ -1,0 +1,44 @@
+nav {
+  position: relative;
+  width: 100%;
+  background-color: $color-orange-dark;
+  padding: 1.8rem 0;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  background-color: $color-orange-dark;
+  position: relative;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 7px 18px rgba($color: #000000, $alpha: 0.48);
+  align-items: center;
+  transition: transform 0.3s;
+  // word-wrap: break-word;
+  &:hover {
+    transform: translateY(-4px);
+  }
+  &-icon {
+    margin-bottom: 0.5rem;
+  }
+  &-text {
+    position: absolute;
+    bottom: 3%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+  }
+}
+.icon-size {
+  width: 5rem;
+}

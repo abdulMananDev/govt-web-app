@@ -1,0 +1,53 @@
+footer {
+  //   position: relative;
+  //   width: 100%;
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1.2rem;
+  line-height: 35.7px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:visited {
+  color: whitesmoke;
+}
+footer li {
+  list-style: none;
+  color: white;
+}
+.cdac {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cdac-top-written {
+  width: 40%;
+  padding: 1.2rem;
+}
+.footer-text {
+  word-spacing: 0.2rem;
+}
+.footer-quick-links {
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-img {
+  justify-content: space-between;
+}
+
+.border-right {
+  border-right: 1px solid white;
+}
+
+.building-img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

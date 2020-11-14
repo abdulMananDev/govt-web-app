@@ -1,0 +1,47 @@
+.department {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-cards {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+  }
+  &-img-container {
+    margin-bottom: 1rem;
+    width: 100%;
+    position: relative;
+  }
+  &-card {
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: 3px 4px 16px rgba($color: #000000, $alpha: 0.31);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: transform 0.3s;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  &-arrow-left {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+  }
+  &-arrow-right {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+  }
+  .arrow-card-img {
+    width: 1rem;
+  }
+}

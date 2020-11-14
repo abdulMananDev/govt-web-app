@@ -1,0 +1,43 @@
+.mulaqaat {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 5.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+  }
+  &-card {
+    margin-bottom: 1rem;
+    width: 46%;
+
+    padding: 1rem 1.2rem;
+    &-date {
+      display: inline;
+      padding: 0.2rem 0.3rem;
+      background-color: $read-load;
+      color: white;
+    }
+    &-img {
+      margin-bottom: 1rem;
+    }
+    &-heading {
+      color: red;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    &-text {
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  }
+}

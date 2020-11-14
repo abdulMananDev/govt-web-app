@@ -1,0 +1,91 @@
+.speeches-container {
+  position: relative;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.speech-heading-wrapper {
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+}
+.speeches-video-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.speeches-video-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46%;
+  padding: 1rem 1.5rem;
+  margin: 1.2rem 0;
+  box-shadow: 5px 4px 24px 13px rgba(0, 0, 0, 0.3);
+  border: 1px solid 000000, 100%;
+  &-date {
+    padding: 1rem 1rem;
+    position: absolute;
+    top: 0;
+    left: -1;
+    background-color: $read-load;
+  }
+  &-heading {
+    display: inline-block;
+    margin: 5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  &-icons {
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  &-para {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 192.4%;
+    margin-bottom: 3.2rem;
+  }
+}
+.top-speeches {
+  position: relative;
+}
+.img-cont-speeches-top {
+  position: absolute;
+  right: 15%;
+  top: 0%;
+}
+.speech-nav-wrapper {
+  background: $color-orange-dark;
+  padding: 1rem 1.2rem;
+  & li {
+    background-color: $read-load;
+    list-style: none;
+    color: orange;
+  }
+}
+
+.speech-img {
+  width: 19rem;
+}
+.deer-img {
+}
+.chinar-img {
+  width: 20rem;
+}
+.news-card-img-1 {
+  width: 80%;
+}
+.speech-nav-wrapper {
+}

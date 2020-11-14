@@ -1,0 +1,187 @@
+.govt-name-space {
+  display: inline-block;
+  width: 45%;
+}
+.controls {
+  width: 40%;
+  justify-content: space-evenly;
+}
+.language-control {
+  width: 20%;
+  justify-content: flex-end;
+}
+.lang-text {
+  margin-right: 1.2rem;
+}
+.font-controls {
+  justify-content: space-evenly;
+}
+
+.font-change-utility {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: inherit;
+  padding: 0.2rem;
+  outline: none;
+  &:not(:last-child) {
+    margin-right: 0.2rem;
+  }
+}
+
+.mini-header-1 {
+  position: relative;
+
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+}
+
+header {
+  position: relative;
+  background-image: url("../assets/hero_image_banner.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heading-box {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.heading-container {
+  background: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+}
+
+.top_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cc3201;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  padding: 0 15px;
+}
+
+.top_actions > div > ul {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+  margin: 0;
+}
+
+.top_actions > div > ul > li {
+  list-style: none;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 6px solid white;
+}
+.top_actions_items {
+  position: relative;
+}
+
+.page_header {
+  background-color: #dc3b08;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 0 0.5rem;
+  }
+  &-heading-text {
+    border-bottom: 2px solid white;
+    padding: 0;
+  }
+}
+
+.main_name {
+  letter-spacing: 2px;
+}
+/* Hero Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  background-image: url("/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .banner-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner-lg {
+    padding-top: 5rem;
+    width: 50%;
+  }
+  .banner-text {
+    position: relative;
+    width: 50%;
+    padding-top: 5rem;
+    &-heading {
+      width: 90%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.65);
+      padding: 1.5rem 0;
+    }
+    &:after {
+      content: "know more";
+      background-color: $color-orange-dark;
+      text-transform: uppercase;
+    }
+  }
+}
+.main-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* IN BRIEF */
+
+.in_brief {
+  background-color: #dc3b08;
+  display: flex;
+  align-items: center;
+  padding: 06px 0px;
+  padding-left: 25px;
+  color: white;
+}
+
+.in_brief_text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 120px;
+}
+
+.in_brief_marquee,
+.in_brief_marquee > div {
+  display: inline;
+}
+
+.in_brief_marquee > div {
+  margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.marquee_emblem {
+  height: 32px;
+  margin-right: 15px;
+}

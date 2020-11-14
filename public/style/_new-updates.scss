@@ -1,0 +1,41 @@
+.new-updates {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.news-card {
+  width: 31%;
+
+  &-date {
+    display: inline;
+    background: $read-load;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+  &-img {
+    // margin-bottom: 1rem;
+    width: 100%;
+  }
+  &-headline {
+    padding: 1rem 1.2rem;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: whitesmoke;
+  }
+}
