@@ -23,6 +23,9 @@ html {
   @include media(">tablet", "<=desktop") {
     font-size: 55%;
   }
+  @include media(">LGdesktop") {
+    font-size: 80.5%;
+  }
 }
 .container {
   position: relative;
