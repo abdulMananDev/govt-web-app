@@ -12,8 +12,13 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.7; }
 
-html {
-  font-size: 62.5%; }
+@media (min-width: 1366px) and (max-width: 1919px) {
+  html {
+    font-size: 80.5%; } }
+
+@media (min-width: 769px) and (max-width: 1366px) {
+  html {
+    font-size: 55%; } }
 
 .container {
   position: relative;
@@ -68,19 +73,12 @@ header {
   background-image: url("../assets/hero_image_banner.svg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 25rem; }
+  background-repeat: no-repeat; }
 
 .heading-box {
   display: flex;
   flex-direction: row;
   position: absolute; }
-  .heading-box::after {
-    content: "know more";
-    background-color: #dc3b08;
-    color: white;
-    text-transform: capitalize;
-    font-weight: bold; }
 
 .heading-container {
   background: rgba(255, 255, 255, 0.65);
@@ -182,13 +180,13 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem; }
+  margin-bottom: 5.5rem; }
 
 .latest-tweet {
   position: relative;
   left: 0;
   top: 1rem;
-  width: 50%; }
+  width: 45%; }
   .latest-tweet-heading {
     background: #186a20;
     color: white;
@@ -198,32 +196,45 @@ nav {
     padding: 0.5rem 0; }
 
 .about-lg {
-  width: 50%;
-  padding: 1rem;
-  background: #f3eaea; }
+  position: relative;
+  width: 55%;
+  padding: 1.5rem;
+  background: #f3eaea;
+  text-align: center; }
+  .about-lg-img-container {
+    margin-bottom: 1.5rem; }
   .about-lg-text h3 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     margin-bottom: 1.2rem; }
   .about-lg-text p {
-    font-size: 1rem;
-    margin-bottom: 1rem; }
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-bottom: 3.2rem; }
 
 .read-more {
-  position: relative;
-  margin-bottom: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; }
-
-.read-more-btn {
-  background: #cd4317;
-  color: white;
-  font-size: 0.8rem;
-  padding: 0.5rem 0.8rem;
-  cursor: pointer;
-  outline: none;
-  border: none; }
+  justify-content: flex-end;
+  background-color: #fab904; }
+  .read-more-btn {
+    background: #cd4317;
+    color: white;
+    font-size: 0.8rem;
+    padding: 1.2rem 1.4rem;
+    cursor: pointer;
+    outline: none;
+    border: none; }
+    .read-more-btn a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.3rem;
+      font-weight: 800; }
 
 .flex-calc-1 {
   display: flex;
@@ -236,7 +247,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 5.5rem; }
 
 .heading-primary {
   display: flex;
@@ -305,14 +316,15 @@ nav {
     justify-content: space-evenly;
     flex-flow: wrap; }
   .department-img-container {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 1rem;
+    width: 100%; }
   .department-card {
     position: relative;
     padding: 1.5rem;
     box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.31);
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 1rem;
     font-weight: 800;
     transition: transform 0.3s; }
     .department-card:hover {
@@ -325,11 +337,14 @@ nav {
     position: absolute;
     top: 50%;
     right: 2%; }
+  .department .arrow-card-img {
+    width: 8rem; }
 
 .mulaqaat {
   margin-bottom: 1.5rem;
   position: relative;
   width: 100%;
+  margin-bottom: 5.5rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -352,12 +367,13 @@ nav {
     .mulaqaat-card-heading {
       color: red;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem; }
     .mulaqaat-card-text {
       letter-spacing: 1px;
       margin-bottom: 1rem;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 1.2rem; }
 
 .gallery {
   position: relative;
