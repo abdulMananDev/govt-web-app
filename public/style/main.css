@@ -17,7 +17,7 @@ html {
 
 .container {
   position: relative;
-  width: 100%; }
+  max-width: 100vw; }
 
 .mini-header {
   position: relative;
@@ -73,11 +73,20 @@ header {
 
 .heading-box {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: absolute; }
+  .heading-box::after {
+    content: "know more";
+    background-color: #dc3b08;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold; }
 
 .heading-container {
+  background: rgba(255, 255, 255, 0.65);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 1rem 1.2rem; }
 
 footer {
   background-color: #2e2929;
@@ -662,44 +671,54 @@ body {
 
 .page_header {
   background-color: #dc3b08;
-  padding: 5px 0; }
-
-.page_header > div {
-  padding-left: 30px; }
-
-.page_header > div > h1 {
-  padding-left: 20px;
-  color: white;
-  text-decoration: underline; }
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem; }
+  .page_header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 0 0.5rem; }
+  .page_header-heading-text {
+    border-bottom: 2px solid white;
+    padding: 0; }
 
 .main_name {
-  display: inline; }
-
-.font_size_action {
-  border: 2px solid white;
-  padding: 5px;
-  margin-left: 6px;
-  width: 20px;
-  display: inline-block;
-  text-align: center; }
+  letter-spacing: 2px; }
 
 /* Hero Banner */
-.hero_banner {
-  background-image: url("/assets/images/Landing_Page_Images/hero_image_banner.svg");
-  height: 500px;
-  background-position: bottom;
-  width: 100%; }
-
-.hero_banner_overlay {
-  background-color: rgba(0, 0, 0, 0.272);
-  height: 500px;
+.banner {
+  position: relative;
   width: 100%;
-  position: relative; }
+  background-image: url("/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .banner .banner-wrapper {
+    display: flex;
+    flex-direction: row; }
+  .banner .banner-lg {
+    padding-top: 5rem;
+    width: 50%; }
+  .banner .banner-text {
+    position: relative;
+    width: 50%;
+    padding-top: 5rem; }
+    .banner .banner-text-heading {
+      width: 90%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.65);
+      padding: 1.5rem 0; }
 
-.lg_image {
-  width: 400px;
-  position: absolute;
-  bottom: 0; }
+.main-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem; }
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700; }
 
 /* IN BRIEF */
 .in_brief {
