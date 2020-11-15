@@ -3,3 +3,33 @@
   flex-direction: row;
   flex-flow: wrap;
 }
+
+.scroll {
+  width: 30rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  @include media(">phone", "<=tablet-portrait") {
+    width: 28rem;
+  }
+
+  @include media(">=zero", "<phone") {
+    width: 22rem;
+  }
+}
+.scroll-img {
+  width: 4rem;
+
+  @include media(">=zero", "<phone") {
+    width: 3.5rem;
+  }
+}
+.scroll-text {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @include media(">=zero", "<phone") {
+    font-size: 1.1rem;
+  }
+}

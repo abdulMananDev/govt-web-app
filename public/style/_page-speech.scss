@@ -4,10 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media(">phone", "<=tablet-portrait") {
+    padding: 1.3rem 1.8rem;
+  }
+
+  @include media(">=zero", "<phone") {
+    padding: 1.1rem 1.5rem;
+  }
 }
 .speech-heading-wrapper {
   padding: 2rem 0;
   margin-bottom: 5rem;
+
+  @include media(">=zero", "<phone") {
+    padding: 1.6rem 0;
+  }
 }
 .speeches-video-cards {
   position: relative;
@@ -23,23 +34,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 46%;
+  width: 41%;
   padding: 1rem 1.5rem;
   margin: 1.2rem 0;
   box-shadow: 5px 4px 24px 13px rgba(0, 0, 0, 0.3);
   border: 1px solid 000000, 100%;
+  @include media(">phone", "<=tablet-portrait") {
+    padding: 1.3rem 1.8rem;
+  }
+  @include media(">=zero", "<phone") {
+    width: 95%;
+  }
   &-date {
     padding: 1rem 1rem;
     position: absolute;
     top: 0;
     left: -1;
     background-color: $read-load;
+    font-weight: 700;
+    @include media(">=zero", "<phone") {
+      font-size: 1rem;
+      padding: 0.5remss;
+    }
   }
   &-heading {
     display: inline-block;
-    margin: 5rem 0;
-    font-size: 2.5rem;
+    margin: 5rem 0 1.5rem 0;
+    font-size: 2rem;
     font-weight: 700;
+    @include media(">phone", "<=tablet-portrait") {
+      margin: 3.2rem 0 1.3rem 0;
+    }
+    @include media(">=zero", "<phone") {
+      font-size: 1.7rem;
+      margin: 2.8rem 0 1.1rem 0;
+    }
   }
   &-icons {
     position: absolute;
@@ -47,15 +76,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
+
+    @include media(">tablet-portrait", "<=tablet-landscape") {
+      width: 70%;
+    }
+    @include media(">phone", "<=tablet-portrait") {
+      font-size: 75%;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 80%;
+    }
   }
 
   &-para {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 192.4%;
     margin-bottom: 3.2rem;
+    @include media(">=zero", "<phone") {
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
   }
 }
 .top-speeches {
@@ -63,8 +107,13 @@
 }
 .img-cont-speeches-top {
   position: absolute;
-  right: 15%;
+  right: 5%;
   top: 0%;
+  text-align: center;
+  @include media(">=zero", "<phone") {
+    opacity: 0.4;
+    right: 20%;
+  }
 }
 .speech-nav-wrapper {
   background: $color-orange-dark;
@@ -86,6 +135,19 @@
 }
 .news-card-img-1 {
   width: 80%;
+  @include media(">=zero", "<phone") {
+    width: 95%;
+  }
+}
+.icon-img {
+  cursor: pointer;
+  @include media(">phone", "<=tablet-portrait") {
+    width: 3rem;
+  }
+
+  @include media(">=zero", "<phone") {
+    width: 2.5rem;
+  }
 }
 .speech-nav-wrapper {
 }
