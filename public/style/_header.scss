@@ -134,11 +134,11 @@ header {
       text-align: center;
       background: rgba(255, 255, 255, 0.65);
       padding: 1.5rem 0;
-    }
-    &:after {
-      content: "know more";
-      background-color: $color-orange-dark;
-      text-transform: uppercase;
+      // &:after {
+      //   content: "know more";
+      //   background-color: $color-orange-dark;
+      //   text-transform: uppercase;
+      // }
     }
   }
 }
