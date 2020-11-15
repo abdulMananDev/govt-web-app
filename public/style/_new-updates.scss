@@ -10,14 +10,22 @@
 .news-cards {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
   justify-content: space-between;
+  flex-flow: wrap;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 .news-card {
   width: 31%;
+  margin-bottom: 2.5rem;
+  @include media(">phone", "<=tablet-portrait") {
+    width: 62%;
+  }
+
+  @include media(">=zero", "<phone") {
+    width: 93%;
+  }
 
   &-date {
     display: inline;

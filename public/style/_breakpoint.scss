@@ -1,8 +1,12 @@
+// 1em === 16px
 $breakpoints: (
-  "phone": 360px,
-  "tablet": 768px,
-  "desktop": 1366px,
-  "LGdesktop": 1920px
+  "zero": 100px,
+  "phone": 600px,
+  "tablet-portrait": 900px,
+  "tablet-landscape": 1200px,
+  "desktop": 1800px,
+  "LGdesktop": 1920px,
+  "infinity": 4000px
 ) !default;
 
 ///

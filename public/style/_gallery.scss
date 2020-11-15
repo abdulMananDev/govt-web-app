@@ -11,6 +11,13 @@
     text-align: center;
     width: 70%;
     margin: 0 auto;
+    @include media(">phone", "<=tablet-portrait") {
+      width: 90%;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 90%;
+    }
   }
   &-text {
     position: relative;
@@ -19,6 +26,14 @@
     margin: 0 auto;
     box-shadow: 5px 8px 17px rgba($color: #000000, $alpha: 0.51);
     border-radius: 5px;
+    @include media(">phone", "<=tablet-portrait") {
+      width: 90%;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 90%;
+    }
+
     &-date {
       position: absolute;
       top: 0;
@@ -33,6 +48,13 @@
       margin-top: 2.2rem;
       font-size: 1.2rem;
       font-weight: 700;
+      @include media(">phone", "<=tablet-portrait") {
+        font-size: 1rem;
+      }
+
+      @include media(">=zero", "<phone") {
+        font-size: 1rem;
+      }
     }
   }
   &-arrow-left {
@@ -42,11 +64,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media(">phone", "<=tablet-portrait") {
+      left: 2%;
+    }
+
+    @include media(">=zero", "<phone") {
+      left: 2;
+    }
+
     & span {
       text-transform: uppercase;
       font-weight: 600;
       color: #827979;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      @include media(">phone", "<=tablet-portrait") {
+        font-size: 1rem;
+      }
+
+      @include media(">=zero", "<phone") {
+        font-size: 1rem;
+      }
     }
   }
   &-arrow-right {
@@ -56,14 +93,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media(">phone", "<=tablet-portrait") {
+      right: 2%;
+    }
+
+    @include media(">=zero", "<phone") {
+      right: 2;
+    }
+
     & span {
       text-transform: uppercase;
       font-weight: 600;
       color: #4a4747;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      @include media(">phone", "<=tablet-portrait") {
+        font-size: 1rem;
+      }
+
+      @include media(">=zero", "<phone") {
+        font-size: 1rem;
+      }
     }
   }
   .arrow-card-img {
     width: 5.2rem;
+    @include media(">phone", "<=tablet-portrait") {
+      width: 3.2rem;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 3rem;
+    }
   }
 }

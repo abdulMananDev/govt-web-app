@@ -7,6 +7,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  &-chinar-img {
+    position: absolute;
+    width: 9rem;
+    top: 0%;
+    left: 15%;
+    @include media(">=zero", "<phone") {
+      left: 0%;
+      width: 7rem;
+    }
+  }
   &-cards {
     display: flex;
     flex-direction: row;
@@ -16,6 +26,13 @@
   &-card {
     margin-bottom: 1rem;
     width: 46%;
+    @include media(">phone", "<=tablet-portrait") {
+      width: 95%;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 93%;
+    }
 
     padding: 1rem 1.2rem;
     &-date {

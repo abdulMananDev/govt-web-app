@@ -9,26 +9,35 @@
   padding: 0;
   margin: 0; }
 
+html {
+  font-size: 88.5%; }
+  @media (min-width: 1921px) and (max-width: 4000px) {
+    html {
+      font-size: 104.64%; } }
+  @media (min-width: 901px) and (max-width: 1200px) {
+    html {
+      font-size: 77.35%; } }
+  @media (min-width: 601px) and (max-width: 900px) {
+    html {
+      font-size: 65.5%; } }
+  @media (min-width: 100px) and (max-width: 599px) {
+    html {
+      font-size: 58.86%; } }
+
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   line-height: 1.7; }
 
-@media (min-width: 1366px) and (max-width: 1920px) {
-  html {
-    font-size: 88.5%; } }
-
-@media (min-width: 769px) and (max-width: 1366px) {
-  html {
-    font-size: 88.5%; } }
-
-@media (min-width: 1921px) {
-  html {
-    font-size: 156.5%; } }
-
 .container {
-  position: relative;
-  max-width: 100vw; }
+  position: absolute;
+  width: 100%; }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .container {
+      width: 100vw; } }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .container {
+      width: 100%; } }
 
 /* VARIABLES */
 /* LANDING_SECTIONS */
@@ -208,6 +217,7 @@ nav {
 
 .card {
   background-color: #cd4317;
+  border: 2px solid #fab904;
   position: relative;
   padding: 1.5rem 2.5rem;
   border-radius: 0.5rem;
@@ -237,13 +247,18 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
   margin-bottom: 5.5rem; }
 
 .latest-tweet {
   position: relative;
   left: 0;
   top: 1rem;
-  width: 45%; }
+  width: 42%;
+  margin-bottom: 2.5rem; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .latest-tweet {
+      width: 100%; } }
   .latest-tweet-heading {
     background: #186a20;
     color: white;
@@ -254,10 +269,13 @@ nav {
 
 .about-lg {
   position: relative;
-  width: 55%;
+  width: 52%;
   padding: 1.5rem;
   background: #f3eaea;
   text-align: center; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .about-lg {
+      width: 93%; } }
   .about-lg-img-container {
     margin-bottom: 1.5rem; }
   .about-lg-text span {
@@ -304,6 +322,12 @@ nav {
   .heading-primary-icon {
     margin: auto;
     font-size: 5rem; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .heading-primary-icon {
+        font-size: 3rem; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .heading-primary-icon {
+        width: 2.5rem; } }
   .heading-primary-text {
     margin-left: 1.3rem;
     white-space: nowrap;
@@ -311,6 +335,13 @@ nav {
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21); }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .heading-primary-text {
+        font-size: 1.5rem; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .heading-primary-text {
+        margin-left: 1rem;
+        font-size: 1.5rem; } }
 
 .heading-secondary-text {
   margin: auto;
@@ -338,14 +369,21 @@ nav {
 .news-cards {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
   justify-content: space-between;
+  flex-flow: wrap;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 1.5rem; }
 
 .news-card {
-  width: 31%; }
+  width: 31%;
+  margin-bottom: 2.5rem; }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .news-card {
+      width: 62%; } }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .news-card {
+      width: 93%; } }
   .news-card-date {
     display: inline;
     background: #fab904;
@@ -370,6 +408,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .mulaqaat-chinar-img {
+    position: absolute;
+    width: 9rem;
+    top: 0%;
+    left: 15%; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .mulaqaat-chinar-img {
+        left: 0%;
+        width: 7rem; } }
   .mulaqaat-cards {
     display: flex;
     flex-direction: row;
@@ -379,6 +426,12 @@ nav {
     margin-bottom: 1rem;
     width: 46%;
     padding: 1rem 1.2rem; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .mulaqaat-card {
+        width: 95%; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .mulaqaat-card {
+        width: 93%; } }
     .mulaqaat-card-date {
       display: inline;
       padding: 0.2rem 0.3rem;
@@ -410,6 +463,12 @@ nav {
     text-align: center;
     width: 70%;
     margin: 0 auto; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .gallery-img-container {
+        width: 90%; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .gallery-img-container {
+        width: 90%; } }
   .gallery-text {
     position: relative;
     padding: 1rem 1.2rem;
@@ -417,6 +476,12 @@ nav {
     margin: 0 auto;
     box-shadow: 5px 8px 17px rgba(0, 0, 0, 0.51);
     border-radius: 5px; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .gallery-text {
+        width: 90%; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .gallery-text {
+        width: 90%; } }
     .gallery-text-date {
       position: absolute;
       top: 0;
@@ -430,6 +495,12 @@ nav {
       margin-top: 2.2rem;
       font-size: 1.2rem;
       font-weight: 700; }
+      @media (min-width: 601px) and (max-width: 900px) {
+        .gallery-text-para {
+          font-size: 1rem; } }
+      @media (min-width: 100px) and (max-width: 599px) {
+        .gallery-text-para {
+          font-size: 1rem; } }
   .gallery-arrow-left {
     position: absolute;
     top: 50%;
@@ -437,11 +508,23 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .gallery-arrow-left {
+        left: 2%; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .gallery-arrow-left {
+        left: 2; } }
     .gallery-arrow-left span {
       text-transform: uppercase;
       font-weight: 600;
       color: #827979;
-      font-size: 1.8rem; }
+      font-size: 1.5rem; }
+      @media (min-width: 601px) and (max-width: 900px) {
+        .gallery-arrow-left span {
+          font-size: 1rem; } }
+      @media (min-width: 100px) and (max-width: 599px) {
+        .gallery-arrow-left span {
+          font-size: 1rem; } }
   .gallery-arrow-right {
     position: absolute;
     top: 50%;
@@ -449,13 +532,31 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .gallery-arrow-right {
+        right: 2%; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .gallery-arrow-right {
+        right: 2; } }
     .gallery-arrow-right span {
       text-transform: uppercase;
       font-weight: 600;
       color: #4a4747;
-      font-size: 1.8rem; }
+      font-size: 1.5rem; }
+      @media (min-width: 601px) and (max-width: 900px) {
+        .gallery-arrow-right span {
+          font-size: 1rem; } }
+      @media (min-width: 100px) and (max-width: 599px) {
+        .gallery-arrow-right span {
+          font-size: 1rem; } }
   .gallery .arrow-card-img {
     width: 5.2rem; }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .gallery .arrow-card-img {
+        width: 3.2rem; } }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .gallery .arrow-card-img {
+        width: 3rem; } }
 
 footer {
   background-color: #2e2929;
@@ -654,9 +755,9 @@ footer li {
     letter-spacing: 2px; }
   .heading-updates-search-overlay {
     position: relative;
-    width: 25%; }
+    width: 35%; }
   .heading-updates-search-input {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     outline: none;
     padding: 1rem 1.2rem;
     border: none;
@@ -672,7 +773,7 @@ footer li {
   top: 2%;
   right: 0%;
   height: 3.6rem;
-  width: 3.5rem;
+  width: 3.6rem;
   outline: none;
   border: none;
   background: #ffffff;
@@ -727,7 +828,8 @@ footer li {
       box-sizing: border-box;
       box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.25);
       border-radius: 23px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      list-style: none; }
 
 .update-result {
   width: 55%; }

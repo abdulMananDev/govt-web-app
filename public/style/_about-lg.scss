@@ -3,13 +3,20 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
   margin-bottom: 5.5rem;
 }
 .latest-tweet {
   position: relative;
   left: 0;
   top: 1rem;
-  width: 45%;
+  width: 42%;
+
+  @include media(">=zero", "<phone") {
+    width: 100%;
+  }
+
+  margin-bottom: 2.5rem;
   &-heading {
     background: #186a20;
     color: white;
@@ -22,10 +29,15 @@
 
 .about-lg {
   position: relative;
-  width: 55%;
+  width: 52%;
   padding: 1.5rem;
   background: $color-pink;
   text-align: center;
+
+  @include media(">=zero", "<phone") {
+    width: 93%;
+  }
+
   &-img-container {
     margin-bottom: 1.5rem;
   }

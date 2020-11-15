@@ -2,23 +2,35 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 88.5%;
+  @include media(">LGdesktop", "<=infinity") {
+    font-size: 104.64%;
+  }
+  @include media(">tablet-portrait", "<=tablet-landscape") {
+    font-size: 77.35%;
+  }
+  @include media(">phone", "<=tablet-portrait") {
+    font-size: 65.5%;
+  }
+
+  @include media(">=zero", "<phone") {
+    font-size: 58.86%;
+  }
+}
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   line-height: 1.7;
 }
-html {
-  @include media(">=desktop", "<=LGdesktop") {
-    font-size: 88.5%;
-  }
-  @include media(">tablet", "<=desktop") {
-    font-size: 88.5%;
-  }
-  @include media(">LGdesktop") {
-    font-size: 156.5%;
-  }
-}
 .container {
-  position: relative;
-  max-width: 100vw;
+  position: absolute;
+  width: 100%;
+  @include media(">phone", "<=tablet-portrait") {
+    width: 100vw;
+  }
+
+  @include media(">=zero", "<phone") {
+    width: 100%;
+  }
 }

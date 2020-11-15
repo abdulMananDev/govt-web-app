@@ -9,15 +9,31 @@
   &-icon {
     margin: auto;
     font-size: 5rem;
+    @include media(">phone", "<=tablet-portrait") {
+      font-size: 3rem;
+    }
+
+    @include media(">=zero", "<phone") {
+      width: 2.5rem;
+    }
   }
   &-text {
     margin-left: 1.3rem;
 
     white-space: nowrap;
     font-size: 1.8rem;
+
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21);
+    @include media(">phone", "<=tablet-portrait") {
+      font-size: 1.5rem;
+    }
+
+    @include media(">=zero", "<phone") {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
     // width: 65%;
     //padding: 0 1.2rem;
   }
