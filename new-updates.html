@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="public/style/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
@@ -11,6 +11,76 @@
     <title>New Updates</title>
   </head>
   <body>
+    <!-- header -->
+    <!-- <div class="top_actions">
+        <div class="govt_tag">GOVERNMENT OF JAMMU AND KASHMIR</div>
+        <div class="top_actions_items">
+          <ul>
+            <li>
+              <span> SCREEN READER</span>
+            </li>
+
+            <li>
+              <span> SKIP TO MAIN</span>
+            </li>
+
+            <li>
+              <span class="font_size_action"> A- </span>
+
+              <span class="font_size_action"> A+ </span>
+
+              <span class="font_size_action">A</span>
+
+              <span class="font_size_action">A</span>
+            </li>
+
+            <li>
+              Language
+
+              <select>
+                <option>English</option>
+                <option>Urdu</option>
+                <option>Dogri</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+    <!-- Header -->
+
+    <div class="page_header">
+      <div>
+        <img
+          src="public/assets/final_AwaamkiBaat/assets/icons/landing_page_section_icons/Emblem_of_India 1.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="page_header-wrapper">
+        <div class="page_header-heading-text">
+          <h1 class="main_name">Awaam Ki Baat</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigation -->
+    <div class="speech-nav-wrapper">
+      <ul class="navigation-pages-list">
+        <li class="navigation-pages-list-item">
+          <a href="">HOME</a>
+        </li>
+        <li class="navigation-pages-list-item">
+          <a href="">GALLERY</a>
+        </li>
+        <li class="navigation-pages-list-item">
+          <a href="">SPEECHES</a>
+        </li>
+        <li class="navigation-pages-list-item">
+          <a href="">DEPARTMENTS</a>
+        </li>
+      </ul>
+    </div>
     <section class="new-updates">
       <div class="heading-updates">
         <div class="heading-updates-text">News Updates</div>
@@ -22,7 +92,7 @@
           />
           <button class="search-icon">
             <img
-              src="./assets/final_AwaamKiBaat/assets/icons/new_updates_icons/noun_Search_3580657 1.svg"
+              src="public/assets/final_AwaamKiBaat/assets/icons/new_updates_icons/noun_Search_3580657 1.svg"
               alt=""
               class="btn-search"
             />
@@ -32,25 +102,20 @@
 
       <div class="body-updates">
         <div class="filter-section">
-          <div class="filter-section-filter" id="month">
+          <div class="filter-section-filter">
             <div class="filter-section-text">FILTER UPDATES</div>
-            <div class="filter-section-month">
-              <label for="slct-year">choose month</label></br>
+
+            <div class="filter-section-month" id="month">
+              <label for="slct-year">choose month</label><br />
               <select name="slct" id="slct-year">
                 <option selected disabled>October</option>
-                <!-- <option value="1">Kashmiri</option>
-                <option value="2">Hindhi</option> -->
-                <!-- <option value="3">Urdu</option> -->
               </select>
             </div>
 
-                 <div class="filter-section-month" id="year">
-              <label for="slct">choose year</label></br>
+            <div class="filter-section-month" id="year">
+              <label for="slct">choose year</label><br />
               <select name="slct" id="slct">
                 <option selected disabled>2020</option>
-                <!-- <option value="1">Kashmiri</option>
-                <option value="2">Hindhi</option>
-                <option value="3">Urdu</option> -->
               </select>
             </div>
 
@@ -76,11 +141,11 @@
                 <label for="old">OLDEST FIRST</label>
               </div>
             </div>
-           
+
             <div class="filter-btn">
               <button class="btn-filter">
                 <!-- <svg class="new-updates-svg"> -->
-                  <!-- <img src="./assets/final_AwaamKiBaat/assets/icons/new_updates_icons/noun_result_2952620 1.svg"> -->
+                <!-- <img src="public/assets/final_AwaamKiBaat/assets/icons/new_updates_icons/noun_result_2952620 1.svg"> -->
                 <!-- </svg> -->
                 <span>SHOW RESULTS</span>
               </button>
@@ -95,8 +160,11 @@
               <li class="filter-section-tag-hashtag">#finance</li>
               <li class="filter-section-tag-hashtag">#employment</li>
             </ul>
-            <img class="filter-section-tag-img" src="./assets/final_AwaamKiBaat/assets/icons/new_updates_icons/Untitled 3.svg" alt="">
-
+            <img
+              class="filter-section-tag-img"
+              src="public/assets/final_AwaamKiBaat/assets/icons/new_updates_icons/Untitled 3.svg"
+              alt=""
+            />
           </div>
         </div>
         <div class="updates-result">
@@ -104,7 +172,7 @@
             <div class="update-result-card-date">28/OCT/2020</div>
             <div class="update-result-card-img">
               <img
-                src="./assets/final_AwaamKiBaat/assets/images/New_Updates_Page_Images/Rectangle 51.svg"
+                src="public/assets/final_AwaamKiBaat/assets/images/New_Updates_Page_Images/Rectangle 51.svg"
                 alt=""
                 class="news-card-img"
               />
@@ -123,10 +191,16 @@
               >
             </div>
           </div>
-         
         </div>
       </div>
-
     </section>
+    <footer>
+      <div class="footer-text">
+        This platform is developed and hosted by Centre For Development of
+        Advanced Computing, Ministry of Electronics & Information Technology,
+        Government of India. All website related content provided, updated,
+        maintained by Raj Bhawan, Government of Jammu and Kashmir.
+      </div>
+    </footer>
   </body>
 </html>

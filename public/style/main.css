@@ -77,7 +77,7 @@ body {
 
 header {
   position: relative;
-  background-image: url("../assets/hero_image_banner.svg");
+  background-image: url("assets/hero_image_banner.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -147,7 +147,7 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  background-image: url("/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  background-image: url("../assets/final_AwaamKiBaat/assets/images/Landing_Page_Images/hero_image_banner.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -716,16 +716,37 @@ footer li {
       width: 90%;
       margin: 0 auto; }
 
+.textarea-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .input-wrapper {
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0.5rem 0.2rem; }
   .input-wrapper-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0.5rem 0.2rem;
     width: 48%;
     margin-bottom: 1rem;
-    box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25); }
+    box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem; }
+
+.input-icon-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto 0; }
+
+.input-img-wrap {
+  width: 2.5rem;
+  margin: auto 0; }
 
 .input-write-lg {
   display: inline-block;
@@ -861,11 +882,11 @@ textarea {
   width: 10rem; }
 
 .gallery-page {
-  position: absolute;
+  position: relative;
   text-align: center;
   box-sizing: border-box;
   width: 98vw;
-  height: 96vh;
+  margin: 3.5rem 0;
   padding: 1rem 1.2rem; }
   .gallery-page-img-top-container {
     width: 100%;
@@ -1179,9 +1200,11 @@ textarea {
     font-weight: 700;
     text-align: justify; }
 
-.form_input-text {
-  font-weight: 700;
-  margin-bottom: 0.8rem; }
+.form_input {
+  margin-bottom: 1rem; }
+  .form_input-text {
+    font-weight: 700;
+    margin-bottom: 0.8rem; }
 
 .filter-section-month label {
   font-weight: 700;

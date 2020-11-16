@@ -52,20 +52,39 @@
     }
   }
 }
-
+.textarea-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .input-wrapper {
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0.5rem 0.2rem;
   &-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0.5rem 0.2rem;
     width: 48%;
     margin-bottom: 1rem;
     box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
   }
 }
-
+.input-icon-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto 0;
+}
+.input-img-wrap {
+  width: 2.5rem;
+  margin: auto 0;
+}
 .input-write-lg {
   display: inline-block;
   font-family: inherit;

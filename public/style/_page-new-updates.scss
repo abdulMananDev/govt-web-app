@@ -10,6 +10,7 @@
   justify-content: space-between;
   flex-flow: wrap;
   margin-bottom: 2.5rem;
+
   &-text {
     font-size: 2.2rem;
     font-weight: 700;
@@ -150,9 +151,12 @@
     text-align: justify;
   }
 }
-.form_input-text {
-  font-weight: 700;
-  margin-bottom: 0.8rem;
+.form_input {
+  margin-bottom: 1rem;
+  &-text {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
 }
 .filter-section-month label {
   font-weight: 700;

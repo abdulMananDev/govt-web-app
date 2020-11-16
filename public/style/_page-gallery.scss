@@ -1,9 +1,9 @@
 .gallery-page {
-  position: absolute;
+  position: relative;
   text-align: center;
   box-sizing: border-box;
   width: 98vw;
-  height: 96vh;
+  margin: 3.5rem 0;
   padding: 1rem 1.2rem;
   &-img-top-container {
     width: 100%;
