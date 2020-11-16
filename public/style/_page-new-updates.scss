@@ -4,7 +4,7 @@
   padding-top: 2rem;
 }
 .heading-updates {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,7 +54,7 @@
   justify-content: space-between;
 }
 .filter-section {
-  width: 35%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,12 +75,15 @@
   }
   &-month {
     margin-bottom: 1.2rem;
+    width: 100%;
   }
+
   &-preferences {
     margin-bottom: 1.2rem;
   }
 
   &-tag {
+    position: relative;
     width: 100%;
     padding: 2rem 1rem;
     text-align: center;
@@ -92,6 +95,12 @@
       flex-direction: row;
       flex-flow: wrap;
       justify-content: space-between;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &-img {
+      position: relative;
+      bottom: 0;
       width: 100%;
     }
     &-hashtag {
@@ -105,11 +114,13 @@
       border-radius: 23px;
       font-size: 1rem;
       list-style: none;
+      margin-bottom: 0.5rem;
     }
   }
 }
 .update-result {
-  width: 55%;
+  // width: 35%;
+  text-align: center;
 
   // &-read-more:link,
 
@@ -139,4 +150,46 @@
     margin-bottom: 1rem;
     font-weight: 700;
   }
+}
+.form_input-text {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.filter-section-month label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-left: -5rem;
+}
+.btn-filter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: #407a46;
+  box-shadow: 7px 10px 14px rgba(0, 0, 0, 0.26);
+  border-radius: 1px;
+}
+
+.filter-btn {
+  margin-top: 2rem;
+  // margin: 0 auto;
+}
+.form_input label {
+  margin-left: 0.8rem;
+  font-weight: 700;
+}
+.new-updates-svg {
+  color: white;
+  height: 2rem;
+  width: 2rem;
 }

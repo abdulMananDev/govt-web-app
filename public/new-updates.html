@@ -29,41 +29,61 @@
           </button>
         </div>
       </div>
+
       <div class="body-updates">
         <div class="filter-section">
-          <div class="filter-section-filter">
+          <div class="filter-section-filter" id="month">
             <div class="filter-section-text">FILTER UPDATES</div>
             <div class="filter-section-month">
-              <select name="slct" id="slct">
-                <option selected disabled>English</option>
-                <option value="1">Kashmiri</option>
-                <option value="2">Hindhi</option>
-                <option value="3">Urdu</option>
+              <label for="slct-year">choose month</label></br>
+              <select name="slct" id="slct-year">
+                <option selected disabled>October</option>
+                <!-- <option value="1">Kashmiri</option>
+                <option value="2">Hindhi</option> -->
+                <!-- <option value="3">Urdu</option> -->
               </select>
             </div>
 
-            <div class="filter-section-month" id="year">
+                 <div class="filter-section-month" id="year">
+              <label for="slct">choose year</label></br>
               <select name="slct" id="slct">
-                <option selected disabled>English</option>
-                <option value="1">Kashmiri</option>
+                <option selected disabled>2020</option>
+                <!-- <option value="1">Kashmiri</option>
                 <option value="2">Hindhi</option>
-                <option value="3">Urdu</option>
+                <option value="3">Urdu</option> -->
               </select>
             </div>
 
-            <div class="filter-section-prefrences">
-              <input type="radio" id="old" value="Older First" name="" />
-              <input type="radio" id="new" value="Newer First" />
-            </div>
-            <div class="heading-primary">
-              <div class="heading-primary-icon">
-                <img
-                  src="./assets/final_AwaamKiBaat/assets/icons/landing_page_section_icons/noun_Meeting_1754101 3.svg"
-                  alt="icon-news"
-                  class="news-card-img"
+            <div class="form_input-prefernce">
+              <div class="form_input-text">preferences</div>
+
+              <div class="form_input">
+                <input
+                  type="radio"
+                  class="form-radio-ip"
+                  id="new"
+                  name="news"
                 />
+                <label for="new">NEWEST FIRST</label>
               </div>
-              <div class="heading-primary-text">SHOW RESULTS</div>
+              <div class="form_input">
+                <input
+                  type="radio"
+                  class="form-radio-ip"
+                  id="old"
+                  name="news"
+                />
+                <label for="old">OLDEST FIRST</label>
+              </div>
+            </div>
+           
+            <div class="filter-btn">
+              <button class="btn-filter">
+                <!-- <svg class="new-updates-svg"> -->
+                  <!-- <img src="./assets/final_AwaamKiBaat/assets/icons/new_updates_icons/noun_result_2952620 1.svg"> -->
+                <!-- </svg> -->
+                <span>SHOW RESULTS</span>
+              </button>
             </div>
           </div>
           <div class="filter-section-tag">
@@ -75,6 +95,8 @@
               <li class="filter-section-tag-hashtag">#finance</li>
               <li class="filter-section-tag-hashtag">#employment</li>
             </ul>
+            <img class="filter-section-tag-img" src="./assets/final_AwaamKiBaat/assets/icons/new_updates_icons/Untitled 3.svg" alt="">
+
           </div>
         </div>
         <div class="updates-result">
@@ -101,8 +123,10 @@
               >
             </div>
           </div>
+         
         </div>
       </div>
+
     </section>
   </body>
 </html>
