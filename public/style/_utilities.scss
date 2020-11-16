@@ -39,7 +39,7 @@
 
 // Radio btn's
 // select
-select {
+.filter-section-month select {
   font-family: inherit;
   color: black;
   padding: 0.5rem;
@@ -49,7 +49,7 @@ select {
   font-size: 1.2rem;
   -webkit-appearence: button;
   outline: none;
-
+  width: 60%;
   margin: 0.6rem 0;
   border-radius: 2px;
   letter-spacing: 2px;

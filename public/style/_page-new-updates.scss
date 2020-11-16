@@ -17,14 +17,14 @@
   }
   &-search-overlay {
     position: relative;
-    width: 35%;
+    width: 40%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
   &-search-input {
     font-size: 1.2rem;
     outline: none;
     padding: 1rem 1.2rem;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     width: 100%;
     letter-spacing: 2px;
     &::-webkit-input-placeholder {
@@ -48,7 +48,7 @@
 }
 .body-updates {
   position: relative;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -119,11 +119,9 @@
   }
 }
 .update-result {
-  // width: 35%;
-  text-align: center;
-
-  // &-read-more:link,
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &-card {
     margin-bottom: 1rem;
     width: 90%;
@@ -149,6 +147,7 @@
     letter-spacing: 1px;
     margin-bottom: 1rem;
     font-weight: 700;
+    text-align: justify;
   }
 }
 .form_input-text {
