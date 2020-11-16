@@ -1,0 +1,71 @@
+.container-lg-mul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  @include media(">=zero", "<phone") {
+    width: 95%;
+  }
+}
+
+.heading-tertiary {
+  display: inline-block;
+  padding: 1.2rem 5rem;
+  font-size: 2.1rem;
+  box-shadow: 0px 4px 26px 9px rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+  border-radius: 3px;
+  margin: 3.5rem 0;
+}
+
+.lg-mul-img {
+  width: 100%;
+}
+.lg-mul-content-wrapper {
+  width: 70%;
+  @include media(">=zero", "<phone") {
+    width: 95%;
+  }
+}
+.lg-mul-img-cont {
+  position: relative;
+}
+
+.date-cont-lg {
+  position: absolute;
+  top: 2%;
+  right: 6%;
+  font-weight: bold;
+  background-color: #fab904;
+  padding: 0.8rem 1rem;
+}
+
+.wrapper-lg-mul {
+  text-align: left;
+}
+
+.lg-mul-heading {
+  display: inline-block;
+  border-bottom: 2px solid red;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 3rem;
+}
+
+.lg-mul-para {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+.chinar-lg-mul-img {
+  width: 10rem;
+}

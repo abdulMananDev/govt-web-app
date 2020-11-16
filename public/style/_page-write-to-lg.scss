@@ -3,23 +3,31 @@
   padding: 1rem 2rem;
   color: white;
   font-family: "Righteous", sans-serif;
-  font-size: 2rem;
+
+  font-size: 1.5rem;
   & h1 {
-    margin: auto 0;
+    margin: 1.2rem 0;
+    position: relative;
+    top: 10%;
   }
   &-img {
-    width: 8rem;
+    width: 6rem;
   }
 }
 .write-wrapper {
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .writing-section {
   position: relative;
   font-family: "Righteous", sans-serif;
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem;
+  // padding: 1rem 1rem;
+  margin: 2rem 0;
   width: 100%;
   &-left {
     position: relative;
@@ -126,6 +134,7 @@ textarea {
   margin: auto 0;
   &-wrapper {
     padding: 0.5rem 1rem;
+    box-sizing: border-box;
     margin-bottom: 2rem;
   }
 }
