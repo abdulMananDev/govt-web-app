@@ -324,10 +324,10 @@ nav {
   box-sizing: border-box; }
   .heading-primary-icon {
     margin: auto;
-    font-size: 4rem; }
+    width: 4rem; }
     @media (min-width: 601px) and (max-width: 900px) {
       .heading-primary-icon {
-        font-size: 3rem; } }
+        width: 3rem; } }
     @media (min-width: 100px) and (max-width: 599px) {
       .heading-primary-icon {
         width: 2.5rem; } }
@@ -420,6 +420,14 @@ nav {
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25); }
+
+.new-nav-wrapper {
+  background: #cd4317;
+  padding: 1rem 1.2rem; }
+  .new-nav-wrapper li {
+    background-color: #dc3b08;
+    list-style: none;
+    color: white; }
 
 .new-updates {
   position: relative;
@@ -1092,16 +1100,23 @@ textarea {
     position: relative;
     width: 40%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .heading-updates-search-overlay {
+        width: 85%; } }
   .heading-updates-search-input {
+    font-family: inherit;
     font-size: 1.2rem;
     outline: none;
     padding: 1rem 1.2rem;
     border: none;
     width: 100%;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: 800; }
     .heading-updates-search-input::-webkit-input-placeholder {
+      font-family: inherit;
       color: #8f8080;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      font-weight: 800; }
 
 .search-icon {
   position: absolute;
@@ -1127,6 +1142,16 @@ textarea {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .filter-section {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: white; } }
   .filter-section-filter {
     padding: 2rem 1rem;
     text-align: center;
@@ -1147,24 +1172,18 @@ textarea {
     position: relative;
     width: 100%;
     padding: 2rem 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     box-shadow: 7px 9px 16px 2px rgba(0, 0, 0, 0.19); }
-    @media (min-width: 601px) and (max-width: 900px) {
-      .filter-section-tag {
-        padding: 2rem 0.5rem; } }
     .filter-section-tag-hashtags {
+      width: 80%;
       display: flex;
       flex-direction: row;
-      flex-flow: wrap;
       justify-content: space-between;
-      width: 100%;
+      flex-flow: wrap;
       margin-bottom: 3rem; }
-      @media (min-width: 601px) and (max-width: 900px) {
-        .filter-section-tag-hashtags {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
     .filter-section-tag-img {
       position: relative;
       bottom: 0;
@@ -1172,14 +1191,14 @@ textarea {
     .filter-section-tag-hashtag {
       color: black;
       margin-bottom: 1rem;
-      width: 40%;
       padding: 0.5rem 0.8rem;
       border: 1px solid #cdb2b2;
       box-sizing: border-box;
       box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.25);
+      border-radius: 31px;
       font-size: 1rem;
       list-style: none;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       padding: 1rem;
       font-weight: 700; }
 
@@ -1189,13 +1208,13 @@ textarea {
   align-items: center;
   position: relative;
   width: 65%; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .updates-result {
+      width: 95%; } }
   .updates-result-card {
     margin-bottom: 1rem;
     width: 90%;
     padding: 1rem 1.2rem; }
-    @media (min-width: 601px) and (max-width: 900px) {
-      .updates-result-card {
-        font-size: 65.5%; } }
     .updates-result-card-date {
       display: inline;
       padding: 0.2rem 0.3rem;
@@ -1252,6 +1271,27 @@ textarea {
   color: white;
   height: 2rem;
   width: 2rem; }
+
+.phone-filter-section {
+  display: inline-block;
+  text-align: left;
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: none;
+  margin: 1rem 0; }
+  .phone-filter-section span {
+    display: inline;
+    border: 2px solid black;
+    padding: 0.8rem 1rem;
+    border-radius: 3px; }
+  .phone-filter-sectionspan:hover {
+    background-color: black;
+    color: white; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .phone-filter-section {
+      display: inline-block; } }
 
 .read-more:link {
   color: #000000; }

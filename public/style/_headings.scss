@@ -8,9 +8,9 @@
   box-sizing: border-box;
   &-icon {
     margin: auto;
-    font-size: 4rem;
+    width: 4rem;
     @include media(">phone", "<=tablet-portrait") {
-      font-size: 3rem;
+      width: 3rem;
     }
 
     @include media(">=zero", "<phone") {
