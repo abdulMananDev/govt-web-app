@@ -15,12 +15,16 @@
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px;
+    @include media(">=zero", "<phone") {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
   }
   &-search-overlay {
     position: relative;
     width: 40%;
     @include media(">=zero", "<phone") {
-      width: 85%;
+      width: 75%;
     }
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
@@ -53,6 +57,10 @@
   border: none;
   background: #ffffff;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
+  @include media(">=zero", "<phone") {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
 }
 .body-updates {
   position: relative;
@@ -245,12 +253,15 @@
   margin: 1rem 0;
   & span {
     display: inline;
-    border: 2px solid black;
+
     padding: 0.8rem 1rem;
     border-radius: 3px;
+
+    background-color: #dc3b08;
+    color: white;
   }
-  &span:hover {
-    background-color: black;
+  & span:hover {
+    border: 2px solid #dc3b08;
     color: white;
   }
   @include media(">=zero", "<phone") {

@@ -1119,13 +1119,17 @@ textarea {
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 2px; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .heading-updates-text {
+        text-align: center;
+        margin-bottom: 1.5rem; } }
   .heading-updates-search-overlay {
     position: relative;
     width: 40%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); }
     @media (min-width: 100px) and (max-width: 599px) {
       .heading-updates-search-overlay {
-        width: 85%; } }
+        width: 75%; } }
   .heading-updates-search-input {
     font-family: inherit;
     font-size: 1.2rem;
@@ -1151,6 +1155,10 @@ textarea {
   border: none;
   background: #ffffff;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25); }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .search-icon {
+      width: 3.3rem;
+      height: 3.3rem; } }
 
 .body-updates {
   position: relative;
@@ -1306,11 +1314,12 @@ textarea {
   margin: 1rem 0; }
   .phone-filter-section span {
     display: inline;
-    border: 2px solid black;
     padding: 0.8rem 1rem;
-    border-radius: 3px; }
-  .phone-filter-sectionspan:hover {
-    background-color: black;
+    border-radius: 3px;
+    background-color: #dc3b08;
+    color: white; }
+  .phone-filter-section span:hover {
+    border: 2px solid #dc3b08;
     color: white; }
   @media (min-width: 100px) and (max-width: 599px) {
     .phone-filter-section {
