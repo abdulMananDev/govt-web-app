@@ -10,7 +10,7 @@
     position: relative;
     top: 10%;
     @include media(">=zero", "<phone") {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       margin: 2rem 0;
     }
   }

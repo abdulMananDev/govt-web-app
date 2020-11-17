@@ -56,13 +56,13 @@
   }
 }
 .icon-heading {
-  width: 4rem;
+  width: 5rem;
 
   @include media(">phone", "<=tablet-portrait") {
-    width: 3rem;
+    width: 4rem;
   }
 
   @include media(">=zero", "<phone") {
-    width: 10rem;
+    width: 3rem;
   }
 }
