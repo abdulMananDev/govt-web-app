@@ -1122,7 +1122,7 @@ textarea {
   justify-content: space-between; }
 
 .filter-section {
-  width: 90%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1135,8 +1135,8 @@ textarea {
     width: 100%;
     margin-bottom: 1.5rem; }
   .filter-section-text {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 800;
     margin-bottom: 1.2rem; }
   .filter-section-month {
     margin-bottom: 1.2rem;
@@ -1172,29 +1172,32 @@ textarea {
       border-radius: 23px;
       font-size: 1rem;
       list-style: none;
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      font-weight: 700; }
 
-.update-result {
+.updates-result {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .update-result-card {
+  align-items: center;
+  position: relative;
+  width: 65%; }
+  .updates-result-card {
     margin-bottom: 1rem;
     width: 90%;
     padding: 1rem 1.2rem; }
-    .update-result-card-date {
+    .updates-result-card-date {
       display: inline;
       padding: 0.2rem 0.3rem;
       background-color: #fab904;
       color: white; }
-    .update-result-card-img {
+    .updates-result-card-img {
       margin-bottom: 1rem; }
-  .update-result-heading {
+  .updates-result-heading {
     color: red;
     font-weight: 700;
     font-size: 1rem;
     margin-bottom: 1rem; }
-  .update-result-text {
+  .updates-result-text {
     letter-spacing: 1px;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -1203,7 +1206,8 @@ textarea {
 .form_input {
   margin-bottom: 1rem; }
   .form_input-text {
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     margin-bottom: 0.8rem; }
 
 .filter-section-month label {

@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 .filter-section {
-  width: 90%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,8 +70,8 @@
     margin-bottom: 1.5rem;
   }
   &-text {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 800;
     margin-bottom: 1.2rem;
   }
   &-month {
@@ -116,13 +116,16 @@
       font-size: 1rem;
       list-style: none;
       margin-bottom: 0.5rem;
+      font-weight: 700;
     }
   }
 }
-.update-result {
+.updates-result {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  width: 65%;
   &-card {
     margin-bottom: 1rem;
     width: 90%;
@@ -154,7 +157,8 @@
 .form_input {
   margin-bottom: 1rem;
   &-text {
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     margin-bottom: 0.8rem;
   }
 }
