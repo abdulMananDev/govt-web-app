@@ -56,6 +56,7 @@
 }
 .filter-section {
   width: 30%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,6 +64,7 @@
 
   &-filter {
     padding: 2rem 1rem;
+
     text-align: center;
     box-sizing: border-box;
     box-shadow: 7px 9px 16px 2px rgba(0, 0, 0, 0.19);
@@ -87,6 +89,9 @@
     position: relative;
     width: 100%;
     padding: 2rem 1rem;
+    @include media(">phone", "<=tablet-portrait") {
+      padding: 2rem 0.5rem;
+    }
     text-align: center;
     box-sizing: border-box;
     box-shadow: 7px 9px 16px 2px rgba(0, 0, 0, 0.19);
@@ -96,6 +101,12 @@
       flex-direction: row;
       flex-flow: wrap;
       justify-content: space-between;
+      @include media(">phone", "<=tablet-portrait") {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       width: 100%;
       margin-bottom: 3rem;
     }
@@ -112,10 +123,11 @@
       border: 1px solid #cdb2b2;
       box-sizing: border-box;
       box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.25);
-      border-radius: 23px;
+      // border-radius: 23px;
       font-size: 1rem;
       list-style: none;
       margin-bottom: 0.5rem;
+      padding: 1rem;
       font-weight: 700;
     }
   }
@@ -126,9 +138,13 @@
   align-items: center;
   position: relative;
   width: 65%;
+
   &-card {
     margin-bottom: 1rem;
     width: 90%;
+    @include media(">phone", "<=tablet-portrait") {
+      font-size: 65.5%;
+    }
 
     padding: 1rem 1.2rem;
     &-date {
