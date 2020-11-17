@@ -116,13 +116,15 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  background-image: url("../assets/final_AwaamKiBaat/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  text-align: center;
+  // background-image: url("../assets/final_AwaamKiBaat/assets/images/Landing_Page_Images/hero_image_banner.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 25rem;
   .banner-wrapper {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
   }
   .banner-lg {
     padding-top: 5rem;
@@ -130,7 +132,9 @@ header {
   }
   .banner-text {
     position: relative;
-    width: 50%;
+    // change here
+    width: 100%;
+
     padding-top: 5rem;
     &-heading {
       width: 90%;

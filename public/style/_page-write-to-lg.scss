@@ -6,12 +6,20 @@
 
   font-size: 1.5rem;
   & h1 {
-    margin: 1.2rem 0;
+    margin: 2rem 0;
     position: relative;
     top: 10%;
+    @include media(">=zero", "<phone") {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+    }
   }
   &-img {
     width: 6rem;
+    height: 6rem;
+    @include media(">=zero", "<phone") {
+      width: 4.5rem;
+    }
   }
 }
 .write-wrapper {
@@ -33,6 +41,9 @@
     position: relative;
     width: 30%;
     text-align: center;
+    @include media(">=zero", "<phone") {
+      display: none;
+    }
     &-lg {
       position: relative;
       background: #363232;
@@ -44,6 +55,10 @@
     font-family: "Lato", sans-serif;
     width: 65%;
     font-weight: bolder;
+    @include media(">=zero", "<phone") {
+      width: 100%;
+      box-sizing: border-box;
+    }
     &-lg {
       justify-content: space-between;
       width: 90%;
@@ -65,15 +80,21 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5rem 0.2rem;
+  @include media(">=zero", "<phone") {
+    margin-bottom: 2.5rem;
+  }
   &-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5rem 0.2rem;
-    width: 48%;
+    width: 46%;
     margin-bottom: 1rem;
     box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
     margin-bottom: 1rem;
+    @include media(">=zero", "<phone") {
+      margin-bottom: 2.5rem;
+    }
   }
 }
 .input-icon-img {
@@ -155,5 +176,13 @@ textarea {
     padding: 0.5rem 1rem;
     box-sizing: border-box;
     margin-bottom: 2rem;
+  }
+}
+.test-icon {
+  width: 7rem;
+  height: 7rem;
+  @include media(">=zero", "<phone") {
+    width: 5rem;
+    height: 5rem;
   }
 }

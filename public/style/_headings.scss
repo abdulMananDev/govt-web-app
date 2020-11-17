@@ -7,7 +7,7 @@
   margin-bottom: 5.5rem;
   box-sizing: border-box;
   &-icon {
-    margin: auto;
+    margin: auto 0;
     width: 4rem;
     @include media(">phone", "<=tablet-portrait") {
       width: 3rem;
@@ -19,8 +19,8 @@
   }
 
   &-text {
-    margin-left: 1.3rem;
-
+    padding-left: 1.3rem;
+    margin: auto 0;
     white-space: nowrap;
     font-size: 1.8rem;
 
@@ -32,7 +32,7 @@
     }
 
     @include media(">=zero", "<phone") {
-      margin-left: 1rem;
+      padding-left: 1rem;
       font-size: 1.5rem;
     }
     // width: 65%;
@@ -46,7 +46,7 @@
   padding: 0 0.2rem;
   display: inline-block;
   white-space: nowrap;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21);
@@ -56,13 +56,13 @@
   }
 }
 .icon-heading {
-  width: 5rem;
+  width: 4rem;
 
   @include media(">phone", "<=tablet-portrait") {
-    width: 4rem;
+    width: 3rem;
   }
 
   @include media(">=zero", "<phone") {
-    width: 3rem;
+    width: 10rem;
   }
 }

@@ -147,19 +147,17 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  background-image: url("../assets/final_AwaamKiBaat/assets/images/Landing_Page_Images/hero_image_banner.svg");
+  text-align: center;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
-  .banner .banner-wrapper {
-    display: flex;
-    flex-direction: row; }
+  background-repeat: no-repeat;
+  height: 25rem; }
   .banner .banner-lg {
     padding-top: 5rem;
     width: 50%; }
   .banner .banner-text {
     position: relative;
-    width: 50%;
+    width: 100%;
     padding-top: 5rem; }
     .banner .banner-text-heading {
       width: 90%;
@@ -323,7 +321,7 @@ nav {
   margin-bottom: 5.5rem;
   box-sizing: border-box; }
   .heading-primary-icon {
-    margin: auto;
+    margin: auto 0;
     width: 4rem; }
     @media (min-width: 601px) and (max-width: 900px) {
       .heading-primary-icon {
@@ -332,7 +330,8 @@ nav {
       .heading-primary-icon {
         width: 2.5rem; } }
   .heading-primary-text {
-    margin-left: 1.3rem;
+    padding-left: 1.3rem;
+    margin: auto 0;
     white-space: nowrap;
     font-size: 1.8rem;
     font-weight: 700;
@@ -343,7 +342,7 @@ nav {
         font-size: 1.5rem; } }
     @media (min-width: 100px) and (max-width: 599px) {
       .heading-primary-text {
-        margin-left: 1rem;
+        padding-left: 1rem;
         font-size: 1.5rem; } }
 
 .heading-secondary-text {
@@ -352,7 +351,7 @@ nav {
   padding: 0 0.2rem;
   display: inline-block;
   white-space: nowrap;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.21); }
@@ -361,13 +360,13 @@ nav {
       font-size: 1.8rem; } }
 
 .icon-heading {
-  width: 5rem; }
+  width: 4rem; }
   @media (min-width: 601px) and (max-width: 900px) {
     .icon-heading {
-      width: 4rem; } }
+      width: 3rem; } }
   @media (min-width: 100px) and (max-width: 599px) {
     .icon-heading {
-      width: 3rem; } }
+      width: 10rem; } }
 
 .flex-calc-1 {
   display: flex;
@@ -428,6 +427,9 @@ nav {
     background-color: #dc3b08;
     list-style: none;
     color: white; }
+
+.wrap {
+  flex-flow: wrap; }
 
 .new-updates {
   position: relative;
@@ -687,11 +689,19 @@ footer li {
   font-family: "Righteous", sans-serif;
   font-size: 1.5rem; }
   .write-section-header h1 {
-    margin: 1.2rem 0;
+    margin: 2rem 0;
     position: relative;
     top: 10%; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .write-section-header h1 {
+        font-size: 1.8rem;
+        margin: 2rem 0; } }
   .write-section-header-img {
-    width: 6rem; }
+    width: 6rem;
+    height: 6rem; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .write-section-header-img {
+        width: 4.5rem; } }
 
 .write-wrapper {
   position: relative;
@@ -711,6 +721,9 @@ footer li {
     position: relative;
     width: 30%;
     text-align: center; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .writing-section-left {
+        display: none; } }
     .writing-section-left-lg {
       position: relative;
       background: #363232;
@@ -719,6 +732,10 @@ footer li {
     font-family: "Lato", sans-serif;
     width: 65%;
     font-weight: bolder; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .writing-section-right {
+        width: 100%;
+        box-sizing: border-box; } }
     .writing-section-right-lg {
       justify-content: space-between;
       width: 90%;
@@ -737,15 +754,21 @@ footer li {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5rem 0.2rem; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .input-wrapper {
+      margin-bottom: 2.5rem; } }
   .input-wrapper-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5rem 0.2rem;
-    width: 48%;
+    width: 46%;
     margin-bottom: 1rem;
     box-shadow: 7px 7px 10px 6px rgba(0, 0, 0, 0.25);
     margin-bottom: 1rem; }
+    @media (min-width: 100px) and (max-width: 599px) {
+      .input-wrapper-flex {
+        margin-bottom: 2.5rem; } }
 
 .input-icon-img {
   width: 2.5rem;
@@ -823,6 +846,14 @@ textarea {
     padding: 0.5rem 1rem;
     box-sizing: border-box;
     margin-bottom: 2rem; }
+
+.test-icon {
+  width: 7rem;
+  height: 7rem; }
+  @media (min-width: 100px) and (max-width: 599px) {
+    .test-icon {
+      width: 5rem;
+      height: 5rem; } }
 
 .container-lg-mul {
   position: relative;
